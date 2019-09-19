@@ -1,0 +1,39 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js start
+
+PATH: 
+  C:\Users\Lee Bennett\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Lee Bennett\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\PuTTY;C:\WINDOWS\System32\OpenSSH;C:\Program Files\TortoiseHg;C:\Program Files (x86)\Brackets\command;C:\ProgramData\chocolatey\bin;C:\xampp\php;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\Users\Lee Bennett\AppData\Local\Microsoft\WindowsApps;C:\Users\Lee Bennett\AppData\Local\atom\bin;C:\Users\Lee Bennett\AppData\Roaming\npm;C:\Users\Lee Bennett\AppData\Roaming\Composer\vendor\bin;C:\Users\Lee Bennett\AppData\Local\GitHubDesktop\bin;C:\Users\Lee Bennett\AppData\Local\Microsoft\WindowsApps;C:\Users\Lee Bennett\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.15.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\xampp\htdocs\recipes\package.json: Unexpected string in JSON at position 88
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:304:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "recipes",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+    "scripts": {
+      "start": "node ./index.js"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
