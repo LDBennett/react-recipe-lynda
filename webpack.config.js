@@ -12,8 +12,10 @@ module.exports = {
   module:{
     rules:[
       {
-        test: /\,js$/,
-        loader: 'babel-loader'
+        test: /\.js$/,
+        use: {
+          loader: "babel-loader"
+        }
       }
     ]
   },
