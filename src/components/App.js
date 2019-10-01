@@ -3,8 +3,6 @@ import Header from './Header.js';
 import RecipeList from './RecipeList.js';
 import RecipeDetail from './RecipeDetail.js';
 
-
-
 class App extends React.Component{
   constructor(props){
     super(props);
