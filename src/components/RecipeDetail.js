@@ -1,20 +1,25 @@
-import React from 'react'
-import classNames from 'classnames'
+import React from 'react';
+import classNames from 'classnames';
 
-
-const RecipeDetail = (props) =>{
-
-  if (!props.recipe){
-    return(
-      <p style={props.style} className={classNames('h3 p2 bg-white italic center',props.className)}>Please Select A Recipe</p>
-    )
+const RecipeDetail = props => {
+  if (!props.recipe) {
+    return (
+      <p
+        style={props.style}
+        className={classNames('h3 p2 bg-white italic center', props.className)}
+      >
+        Please Select A Recipe
+      </p>
+    );
   }
 
-  return(
-    <div style={props.style} className={classNames('p2 bg-white',props.className)}>
-
+  return (
+    <div
+      style={props.style}
+      className={classNames('p2 bg-white', props.className)}
+    >
       <h2 className="h2">{props.recipe.name}</h2>
-      <img className="fit" src={props.recipe.image} alt=""/>
+      <img className="fit" src={props.recipe.image} alt="" />
       <div>
         <span>{props.recipe.category}</span>
         <span>{props.recipe.calories}</span>
@@ -34,8 +39,7 @@ const RecipeDetail = (props) =>{
         <li></li>
       </ul>
     </div>
-  )
-
+  );
 };
 
 export default RecipeDetail;

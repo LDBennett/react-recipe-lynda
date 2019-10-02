@@ -6,4 +6,4 @@ import './styles/index.css';
 
 const MOUNT_ELEMENT = document.getElementById('root');
 
-ReactDOM.render(<App/>, MOUNT_ELEMENT);
+ReactDOM.render(<App />, MOUNT_ELEMENT);
