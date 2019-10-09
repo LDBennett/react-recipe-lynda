@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Home from './Home';
 import Favorites from './Favorites';
+import Recipe from './Recipe';
 import Header from './Header';
 import NotFound from './NotFound';
 
@@ -59,6 +60,11 @@ class App extends React.Component{
                 <Favorites state={this.state} toggleFavorite={this.toggleFavorite}/>
               )}
             />
+            <Route
+              path="/recipe/:id"
+              component={Recipe}
+            />
+            
             <Route component={NotFound}/>
           </Switch>
         </BrowserRouter>
